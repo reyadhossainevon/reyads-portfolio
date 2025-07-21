@@ -27,6 +27,12 @@
     border-radius: 5px;
     font-size: 20px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e55d00;
 }
 
 .section-title {
@@ -214,4 +220,226 @@ footer textarea {
     display: flex;
     gap: 16px;
 
+}
+
+
+/* Responsive styles */
+
+/* Small devices (max-width: 576px) */
+@media (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        margin: 0 10px;
+        align-items: flex-start;
+    }
+    .nav-title {
+        font-size: 28px;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header {
+        background-size: cover;
+        background-position: top left, bottom right;
+    }
+    .banner {
+        flex-direction: column;
+        margin: 0 10px;
+        align-items: center;
+    }
+    .banner-title {
+        font-size: 40px;
+        white-space: normal;
+    }
+    .banner-greetings {
+        font-size: 24px;
+    }
+    .banner-pic {
+        width: 100%;
+        max-width: 320px;
+    }
+    .about {
+        padding: 40px 10px;
+    }
+    .about-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+    main {
+        max-width: 100%;
+        margin: 0 5px;
+    }
+    main section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .skills-container,
+    .resume-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 40px 10px;
+        gap: 40px;
+    }
+    .footer-coloumn {
+        width: 100%;
+    }
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
+        height: 48px;
+        padding: 8px 12px;
+    }
+}
+
+/* Medium devices (min-width: 577px) and (max-width: 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    nav {
+        margin: 0 40px;
+    }
+    .nav-title {
+        font-size: 36px;
+    }
+    nav ul li {
+        margin-right: 24px;
+    }
+    .header {
+        background-size: contain;
+    }
+    .banner {
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: center;
+    }
+    .banner-title {
+        font-size: 60px;
+        white-space: normal;
+    }
+    .banner-greetings {
+        font-size: 32px;
+    }
+    .banner-pic {
+        width: 100%;
+        max-width: 400px;
+    }
+    .about {
+        padding: 60px 30px;
+    }
+    .about-items {
+        flex-direction: row;
+        gap: 24px;
+    }
+    main {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    main section {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .skills-container,
+    .resume-container {
+        flex-direction: row;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .skill,
+    .resume-container > div {
+        flex: 1 1 45%;
+    }
+    footer {
+        flex-direction: column;
+        padding: 60px 30px;
+        gap: 40px;
+    }
+    .footer-coloumn {
+        width: 100%;
+    }
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
+        height: 56px;
+        padding: 10px 16px;
+    }
+}
+
+/* Large devices (min-width: 993px) */
+@media (min-width: 993px) {
+    nav {
+        margin: 0 200px;
+        flex-direction: row;
+    }
+    .nav-title {
+        font-size: 45px;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        margin-right: 51px;
+    }
+    .header {
+        background-size: auto;
+    }
+    .banner {
+        flex-direction: row;
+        margin: 0 35px 0 200px;
+        align-items: flex-start;
+    }
+    .banner-title {
+        font-size: 85px;
+        white-space: nowrap;
+    }
+    .banner-greetings {
+        font-size: 45px;
+    }
+    .banner-pic {
+        width: 580px;
+    }
+    .about {
+        padding: 130px 150px;
+    }
+    .about-items {
+        flex-direction: row;
+        gap: 0;
+    }
+    main {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    main section {
+        margin-top: 130px;
+        margin-bottom: 130px;
+    }
+    .skills-container,
+    .resume-container {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .skill,
+    .resume-container > div {
+        flex: 1 1 0;
+    }
+    footer {
+        flex-direction: row;
+        padding: 130px 230px;
+        gap: 100px;
+    }
+    .footer-coloumn {
+        width: 50%;
+    }
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
+        height: 64px;
+        padding: 10px 20px;
+    }
 }
